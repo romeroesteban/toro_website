@@ -35,7 +35,7 @@ function draw() {
      cursor('grabbing');
   }
   
-  background(0);
+  background(0,0,0.05);
   
   rotateX(0.24*PI);
   rotateY(0.24*PI);

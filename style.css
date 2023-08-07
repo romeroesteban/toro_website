@@ -5,19 +5,3 @@ html, body {
 canvas {
   display: block;
 }
-
-/* modificaciones para botón flecha */
-.scroll-button {
-    position: fixed;
-    bottom: 20px;
-    right: 20px;
-  }
-  
-  .scroll-button a {
-    display: block;
-  }
-  
-  .scroll-button img {
-    width: 50px;
-    height: 50px;
-  }

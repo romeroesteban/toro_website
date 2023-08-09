@@ -12,7 +12,7 @@ function setup() {
 
   //console.log(Dw.EasyCam.INFO);
 
-  easycam = new Dw.EasyCam(this._renderer, { distance: 1000 });
+  easycam = new Dw.EasyCam(this._renderer, { distance: isMobile() ? 1000 : 600 });
 
   strokeWeight(1.8);
 
@@ -36,9 +36,13 @@ function draw() {
   }
   
   background(0,0,0.07);
-  
+
+  /*
   rotateX(0.24*PI);
   rotateY(0.24*PI);
+  */
+
+  rotateX(-0.02*PI);
   
   for (theta = 0; theta < 20*Math.PI; theta++) {
     for (phi = 0; phi < 20*Math.PI; phi++) {   
@@ -55,4 +59,8 @@ function draw() {
       point(x,y,z);
       }
     }
+}
+
+function isMobile() {
+  return windowWidth <= 768;
 }
